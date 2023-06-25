@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/untitled"
+    tools:context=".categoryfr.SecondFragment">
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:padding="25dp"
+      android:id="@+id/cons"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      >
+      <TextView
+          android:layout_marginTop="10dp"
+          android:textStyle="bold"
+          android:textColor="@color/black"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:id="@+id/first_name_users"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          />
+
+
+      <TextView
+          android:textStyle="bold"
+          android:textColor="@color/black"
+          app:layout_constraintLeft_toLeftOf="@+id/first_name_users"
+          app:layout_constraintTop_toBottomOf="@+id/first_name_users"
+          android:id="@+id/last_name_users"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          app:layout_constraintTop_toBottomOf="@+id/last_name_users"
+          app:layout_constraintLeft_toLeftOf="@+id/last_name_users"
+          app:layout_constraintRight_toRightOf="@+id/last_name_users"
+          android:id="@+id/birthday_users"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+      <TextView
+          app:layout_constraintRight_toRightOf="@+id/birthday_users"
+          app:layout_constraintLeft_toLeftOf="@+id/birthday_users"
+          app:layout_constraintTop_toBottomOf="@+id/birthday_users"
+          android:textStyle="bold"
+          android:textColor="@color/black"
+          android:id="@+id/data_save"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <TextView
+          android:textStyle="bold"
+          android:textColor="@color/black"
+          app:layout_constraintLeft_toLeftOf="@+id/data_save"
+          app:layout_constraintTop_toBottomOf="@+id/data_save"
+          android:id="@+id/users_number"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+
+      <com.airbnb.lottie.LottieAnimationView
+          android:layout_marginTop="5dp"
+         app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+
+          android:id="@+id/next_add"
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          app:lottie_rawRes="@raw/dataadd"
+          app:lottie_autoPlay="true"
+          app:lottie_loop="true"/>
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_line"
+        app:layout_constraintBottom_toTopOf="@+id/rv_Second"
+       app:layout_constraintTop_toBottomOf="@+id/cons"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="15dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/rv_Second"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cons_line"
+     />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

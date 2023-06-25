@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="#D7E9F1"
+        app:cardCornerRadius="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:hint="Kasalanish tarixi"
+                android:id="@+id/medicalHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:hint="Kassalik turi"
+                android:id="@+id/onTheLastDayOfTreatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:hint="Oxirgi davlonish vaqti"
+                android:id="@+id/dateoftreatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:hint="Qaysi kunlar kurikda bulishi"
+                android:id="@+id/daystocome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="10dp"
+                android:background="#FFD7E9F1"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                   app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/cancel"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="18sp"
+                    android:backgroundTint="#79E8F6"
+                    android:id="@+id/save_data"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_margin="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:text="saqlash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginBottom="10dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="18sp"
+                    android:backgroundTint="#E91E63"
+                    app:layout_constraintLeft_toRightOf="@+id/save_data"
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_margin="9sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="bekor qilish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
